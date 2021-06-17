@@ -16,11 +16,3 @@ class ComplicatedObject implements Copyable {
         this.type = type;
     }
 }
-
-public class PrototypeTest { //тест
-    public static void main(String[] args) {
-        ComplicatedObject prototype = new ComplicatedObject();
-        ComplicatedObject clone = prototype.copy();
-        clone.setType(ComplicatedObject.Type.ONE);
-    }
-}
